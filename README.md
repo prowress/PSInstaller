@@ -33,3 +33,5 @@ Package list:
 	* Wireshark-4.2.2-x64.exe
 	* WiresharkPortable64_4.2.2.paf.exe
 	* 7z2301-x64.exe
+
+	TESTING VSCode UBUNTU IDE CONNECTION
