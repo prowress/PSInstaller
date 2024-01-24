@@ -4,6 +4,7 @@ installation options and parallel installation #>
 <# Ask for offline or online installation(I'll probably get rid of online 
 installation as a whole. WinGet already exists for this and, 
 if you're already in the command line, why would you use a wrapper for WinGet?) #>
+$InsType = Read-Host "Enter 'on' for offline installation or 'off' for offline installation, then press enter"
 
     <#Network checkup for online installation if failed, 
     ask to default to offline#>
@@ -12,6 +13,7 @@ if you're already in the command line, why would you use a wrapper for WinGet?) 
 
 <# Executables listing. Listed packages are assigned numbers and
 user prompted to enter numbers for packages to be installed or A for all. #>
+Get-ChildItem -Path .\ -Force -Include *.exe
 
 <# Default or insert installation path#>
 
