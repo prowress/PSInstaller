@@ -13,7 +13,10 @@ $InsType = Read-Host "Enter 'on' for offline installation or 'off' for offline i
 
 <# Executables listing. Listed packages are assigned numbers and
 user prompted to enter numbers for packages to be installed or A for all. #>
-Get-ChildItem -Path .\ -Force -Include *.exe
+(Get-ChildItem -Path ./Packages -Force -Recurse -Include *.exe,*.zip).BaseName |
+    Where-Object -FilterScript {
+        ()
+    }
 
 <# Default or insert installation path#>
 
